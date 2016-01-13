@@ -106,12 +106,16 @@ Optional Variables:
 */
 
 {
-  graphiteHost: '',
-  graphitePort: '',
+  graphiteHost: "127.0.0.1",
+  graphitePort: 2003,
   port: 8125,
-  flushInterval: 10000,
-  backends: [ 'statsd-influxdb-backend' ],
-
+  flushInterval: 10000
+  //graphiteHost: '',
+  //graphitePort: '',
+  //port: 8125,
+  //flushInterval: 10000,
+  //backends: [ 'statsd-influxdb-backend' ],
+/*
   influxdb: {
     host: '127.0.0.1',   // InfluxDB host. (default 127.0.0.1)
     port: 8086,          // InfluxDB port. (default 8086)
@@ -132,5 +136,5 @@ Optional Variables:
     includeStatsdMetrics: true, // Send internal statsd metrics to InfluxDB. (default false)
     includeInfluxdbMetrics: true // Send internal backend metrics to InfluxDB. (default false)
                                   // Requires includeStatsdMetrics to be enabled.
-  }
+  }*/
 }
